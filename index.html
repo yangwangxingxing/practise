@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equitv="X-UA-Compatible" content="ie=edge">
+    <title>GODIVA</title>
+    <link rel="stylesheet" href="css/bootstrap.css"/>
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/base.css"/>
+    <link rel="stylesheet" href="css/carousel.css"/>
+    <link rel="stylesheet" href="css/banner.css"/>
+    <link rel="stylesheet" href="css/online.css">
+    <link rel="stylesheet" href="css/video.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/carousel.js"></script>
+</head>
+<body>
+<!--第一层：导航栏-->
+<!-- <header>
+    <iframe src="header.html" frameborder="0" class="my-header"></iframe>
+</header> -->
+<header id="header">
+    <!--导航左边栏-->
+    <div class="row">
+        <div class="nav-left col-6">
+            <a href="#" class="mr-3">
+                <select name="language" id="language">
+                    <option value="简体">中文简体</option>
+                    <option value="繁体">中文繁体</option>
+                    <option value="英文">English</option>
+                </select>
+            </a>
+            <a href="#" class="mr-3">收藏网站</a>
+            <a href="#">在线客服</a>
+        </div>
+        <!--导航右边栏-->
+        
+        <div class="nav-right col-6">
+            <a href="login.html" target="_blank">
+                <input type="text" value="登录" class="btn mr-2 w-2">
+            </a>
+            <input type="text" value="注册" class="btn mr-2 w-2">
+            <a href="#">
+                <img src="" class="mr-2">
+                <span class="text-white mr-2">0件</span>
+            </a>
+            <input type="text" placeholder="搜索" class="search">
+            <div class="search_img">
+              <img src="images/search.png"/>
+            </div>
+        </div>
+    </div>
+    <!--商标-->
+    <div class="brand">
+        <a href="#">
+            <img src="images/nav-logo2x.png"/>
+        </a>
+    </div>
+    <!--导航中间栏-->
+    <div class="nav-center">
+        <ul class="mb-0">
+            <li>
+                <a href="#">首页</a>
+            </li>
+            <li>
+                <a href="" id="products">所有产品
+                    <div class="all-products" id="all_products" style="display:none">
+                        <div class="products-list">
+                            <ul style="list-style:none">
+                                <li class="py-2">
+                                    <a href="#">
+                                        <img src="images/series-pro-1.png">
+                                        <span class="pr-3">当季新品</span>
+                                    </a>
+                                    <div class="seasonal-new-product">
+                                        <ul class="row" style="list-style:none">
+                                            <li class="col-4 my-3">
+                                                <a href="#">
+                                                    <img src="images/series-pro-1-1.jpg">
+                                                </a>
+                                                <p>2018中秋节限量版片装巧克力礼盒15片装</p>
+                                            </li>
+                                            <li  class="col-4 my-3">
+                                                <a href="#">
+                                                    <img src="images/series-pro-1-2.jpg">
+                                                </a>
+                                                <p>2018中秋节限量版月饼形糕点礼盒 4颗装</p>
+                                            </li>
+                                            <li  class="col-4 my-3">
+                                                <a href="#">
+                                                    <img src="images/series-pro-1-3.jpg">
+                                                </a>
+                                                <p>2018中秋节限量版尊享礼盒（8颗）</p>
+                                            </li>
+                                            <li  class="col-4">
+                                                <a href="#">
+                                                    <img src="images/series-pro-1-4.jpg">
+                                                </a>
+                                                <p>2018中秋节限量版典雅礼盒（9颗）</p>
+                                            </li>
+                                            <li  class="col-4">
+                                                <a href="#">
+                                                    <img src="images/series-pro-1-5.jpg">
+                                                </a>
+                                                <p>2018中秋节限量版花好月圆礼盒（16颗）</p>
+                                            </li>
+                                            <li  class="col-4">
+                                                <a href="#">
+                                                    <img src="images/series-pro-1-6.jpg">
+                                                </a>
+                                                <p>2018中秋节限量版臻选礼盒（34颗）</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="py-2">
+                                    <a href="#">
+                                        <img src="images/series-pro-2.png">
+                                        <span class="pr-3">经典礼盒</span>
+                                    </a>
+                                </li>
+                                <li class="py-2">
+                                    <a href="#">
+                                        <img src="images/series-pro-3.png">
+                                        <span class="pr-3">休闲分享</span> 
+                                    </a>
+                                </li>
+                                <li class="py-2">
+                                    <a href="#">
+                                        <img src="images/series-pro-4.png">
+                                        <span class="pr-3">婚礼定制</span>
+                                    </a>
+                                </li>
+                                <li class="py-2">
+                                    <a href="#">
+                                        <img src="images/series-pro-5.png">
+                                        <span class="pr-3">冰淇淋</span>
+                                    </a>
+                                </li>
+                                <li class="py-2">
+                                    <a href="#">
+                                        <img src="images/series-pro-6.png">
+                                        <span class="pr-3">线上专享</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#">会员中心</a>
+            </li>
+            <li>
+                <a href="#">品牌故事</a>
+            </li>
+            <li>
+                <a href="#">门店查询</a>
+            </li>
+            <li>
+                <a href="#">企业团购</a>
+            </li>
+        </ul>
+    </div>
+</header>
+<!--第二层：轮播图-->
+<div class="carousel">    
+    <div class="pic1 pic">
+        <div class="carousel-gray"></div>
+        <div class="carousel-word">
+            <h3 class="new">当季新品</h3>
+            <hr/>
+            <p>Seasonal</p>
+        </div> 
+    </div>
+    
+    <div class="pic2 pic">
+        <div class="carousel-gray"></div>
+        <div class="carousel-word">
+            <h3>经典礼盒</h3>
+            <hr/>
+            <p>Classic Box</p>
+        </div>
+    </div>
+    <div class="pic3 pic">
+        <div class="carousel-gray"></div>
+        <div class="carousel-word">
+            <h3>休闲分享</h3>
+            <hr/>
+            <p>Self Treat</p>
+        </div>
+    </div>
+    <div class="pic4 pic">
+        <div class="carousel-gray"></div>
+        <div class="carousel-word">
+            <h3>婚礼定制</h3>
+            <p>Wedding</p>
+        </div>
+    </div>
+</div>
+<!--<div class="row mx-0 my-0" id="f2" id="my-accordion">
+    <div class="col-lg-3 seasonal px-0">
+        <a href="#">
+            <div class="carousel-gray"></div>
+            <img src="images/accordion-b-1.jpg"/>
+            <div class="carousel-word">
+                <h3 class="new">当季新品</h3>
+                <hr/>
+                <p>Seasonal</p>
+            </div>            
+            <div>
+                <div style="touch-action: none">
+                    <img src="images/imgdialog_01.jpg">
+                </div>
+            </div>
+        </a>
+    </div>
+    <div class="col-lg-3 classic-box px-0">
+        <a href="#">
+            <div class="carousel-gray"></div>
+            <img src="images/accordion-b-2.jpg"/>
+            <div class="carousel-word">
+                <h3>经典礼盒</h3>
+                <hr/>
+                <p>Classic Box</p>
+            </div>
+        </a>
+    </div>
+    <div class="col-lg-3 self-treat px-0">
+        <a href="#">
+            <div class="carousel-gray"></div>
+            <img src="images/accordion-b-3.jpg"/>
+            <div class="carousel-word">
+                <h3>休闲分享</h3>
+                <hr/>
+                <p>Self Treat</p>
+            </div>
+        </a>
+    </div>
+    <div class="col-lg-3 wedding px-0">
+        <a href="#">
+            <div class="carousel-gray"></div>
+            <img src="images/accordion-b-4.jpg"/>
+            <div class="carousel-word">
+                <h3>婚礼定制</h3>
+                <hr/>
+                <p>Wedding</p>
+            </div>
+        </a>
+    </div>
+</div>-->
+<!--第三层：广告栏-->
+<div id="banner" class="row mx-0" >
+    <img src="./images/pc-bg-8-1.png" class="bg1"/>
+    <img src="./images/pc-bg-8-2.png" class="bg2"/>
+    <div class="banner-content row col-9">
+        <div class="col-6">
+            <a href="#"><img src="./images/pic-tips.png" class="pic-tips"/></a>
+            <a href="activity.html" target="_blank"><img src="./images/banner1.png" class="banner1"/></a>
+        </div>
+        <div class="col-6">
+            <a href="#"><img src="./images/banner2.png" class="banner2"></a>
+            <a href="#"><img src="./images/banner3.png" class="banner3"></a>
+        </div>
+    </div>
+</div>
+<!--第四层：线上专享-->
+<div id="product">
+    <div>
+        <div class="online">
+            <div>
+                <h1>线上专享</h1>
+                <p>Online Exclusive</p>
+                <p>
+                    <a href="#">查看更多&gt</a>
+                </p>
+            </div>
+            <div class="product-pic d-flex">
+                <a href="#">
+                    <img src="images/hovr-bg-1.png">
+                </a>
+                <a href="#">
+                    <img src="images/hovr-bg-2.png">
+                </a>
+                <a href="#">
+                    <img src="images/hovr-bg-3.png">
+                </a>
+                <a href="#">
+                    <img src="images/hovr-bg-4.png">
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<!--第五层：视频介绍-->
+<div id="video">
+    <div> 
+        <div class="video_bg">
+            <div>
+                <video poster="images/pic-video-cover.jpg"  controls style="object-fit: fill">
+                    <source src="images/video.mp4" type="video/mp4">                   
+                </video>
+                <!--<a href="#">
+                    <img src="images/video-btn.png">
+                </a>-->
+            </div> 
+            <div class="d-flex">
+                <h2 class="mr-4">新闻公告</h2>
+                <div>
+                    <p>
+                        <span class="btn btn-danger text-white ">精华</span>
+                        <a href="#">GODIVA歌帝梵2018春季系列</a>
+                    </p>
+                    <p class="ml-0">
+                        <span class="btn btn-danger text-white">热议</span>
+                        <a href="#">以匠心工艺融合传统和时尚</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--第六层：电子贺卡-->
+<!-- <div id="card">
+    <div>
+        <div>
+            <div>
+                <a href=""><img src="" alt=""></a>
+                <div> 
+                    <span></span>
+                </div>
+            </div>
+            <div>
+                <div><span>巧克力文化</span></div>
+                <div><span>大师面对面</span></div>
+                <div><span>GODIVA店铺</span></div>
+            </div>
+        </div>
+    </div> 
+</div> -->
+<!--第七层：底部导航栏-->
+<!-- <footer class="mb-0">
+    <iframe src="footer.html" frameborder="0" class="my-footer"></iframe>
+</footer> -->
+<footer>
+    <div class="footer" id="footer">
+        <div class="foot_list">
+            <ul>
+                <li>
+                    <a href="#">丰梵荟</a>
+                    <span>|</span>
+                </li>
+                <li>
+                    <a href="#">帮助中心</a>
+                    <span>|</span>
+                </li>
+                <li>
+                    <a href="#">加入我们</a>
+                    <span>|</span>
+                </li>
+                <li>
+                    <a href="#">联系我们</a>
+                    <span>|</span>
+                </li>
+                <li>
+                    <a href="#">网站地图</a>
+                    <span>|</span>
+                </li>
+                <li>
+                    <a href="#">隐私声明</a>
+                    <span>|</span>
+                </li>
+                <li>
+                    <a href="#">意见问题</a>
+                    <span>|</span>
+                </li>
+                <li>
+                    <a href="#">公司证件</a>
+                    <span>|</span>
+                </li>
+            </ul>          
+            <p>歌帝梵(上海)食品商贸有限公司Copyright&copy GODIVA Chocolatier Inc,All Rights Reserved 沪ICP09091290号</p> 
+            <select name="web" id="web">
+                <option value="international">国际网站</option>
+                <option value="chinese">中文网站</option>
+            </select>
+            <p>沪公网安备 31010102002638号</p>
+        </div>
+    </div>
+</footer>
+<script>
+    $("#my-accordion").accordion();
+</script>
+</body>
+</html>

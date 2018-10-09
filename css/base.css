@@ -1,0 +1,17 @@
+body{
+    margin:0;
+    padding:0;
+    text-decoration:none;
+    box-sizing:border-box;
+    max-width:100%;
+    font-family:"宋体";
+}
+a:hover{
+    text-decoration: none;
+}
+.my-header{
+    width:100%;
+}
+.my-footer{
+    width:100%;
+}

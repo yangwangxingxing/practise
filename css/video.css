@@ -1,0 +1,50 @@
+/*第五层：视频广告*/
+#video{
+  width:100%;
+  height:100%;
+}
+#video>div{
+  width:100%;
+  height:100%;
+}
+#video .video_bg{ 
+  width:100%;
+  height:50em;
+  position: relative;
+  margin:0 auto;
+  background: url("../images/index-pc-bg-6.jpg") no-repeat;
+  background-size:cover; 
+}
+
+#video .video_bg>div:first-child>video{
+  width:50%;
+  top:15%;
+  left: 25%;
+  border:5px solid#dbc26d;
+  position: absolute;
+  z-index: 5;
+}
+/* #video .video_bg>div:first-child>a>img{
+  position: absolute;
+  z-index: 10;
+  width:10%;
+  top:30%;
+  left: 45%;
+} */
+#video .video_bg>div:last-child{
+  position: absolute;
+  left:25%;
+  top:65%;
+}
+#video .video_bg>div:last-child>h2{
+  font-weight:900;
+  font-size:2em;
+  font-family: "黑体";
+}
+#video .video_bg>div:last-child p span,a{
+  font-size:0.9em;
+}
+#video .video_bg>div:last-child p>a{
+  color:#6C2715;
+  text-decoration: underline;
+}

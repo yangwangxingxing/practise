@@ -1,0 +1,111 @@
+#login-dialog{
+    width:100%;
+    height: 100%;
+    background-color:rgba(0,0,0,0.85);
+    text-align: center;
+    color:#341709;
+    font-size: 0.8em;
+}
+#login-dialog>div{
+    position: relative;
+    opacity:1;
+    height:70em;
+    z-index: 40;
+}
+#login-dialog .dialog-container{
+    top:5%;
+    left:30%;
+    position: absolute;
+    z-index: 45;
+    width:40em;
+    background: url("../images/pic-login-bg.jpg");
+}
+#login-dialog .dialog-container>a>img{
+    width:100%;
+}
+#login-dialog .dialog-container>.dialog-member>p{
+    font-size: 1.8em;
+    font-family: "Sri-TSCRegular", "PingFangSC-Regular", "Hiragino Sans GB", "宋体", sans-serif;
+    margin-bottom: 0em;
+}
+#login-dialog .dialog-container>.dialog-member>img{
+    width:100%;
+}
+#login-dialog .dialog-container>.dialog-member>a{
+    text-decoration: none;
+}
+#login-dialog .dialog-container>.dialog-member>a>span{
+    width:50%;   
+    font-size: 0.8em;   
+    padding:0.5em 6em;   
+}
+#login-dialog .dialog-container>.dialog-member>a>span.official-member-login{
+    background: #E3D8B8;
+    color:#341709;
+}
+#login-dialog .dialog-container>.dialog-member>a>span.store-member-login{
+    background: #52261B;
+}
+#login-dialog .dialog-container>.dialog-member>.row>.account{
+    text-align: left;
+    margin-left:-10%;
+}
+#login-dialog .dialog-container>.dialog-member>.row>.account>div>input{
+   width:80%; 
+}
+#login-dialog .dialog-container>.dialog-member>.row>.account>label,a{
+    color:#341709;
+}
+.login-uname,.login-upwd{
+    display: inline-block;
+}
+#login-dialog .dialog-container>.dialog-member>.row>input{
+    background: #52261B;
+    border:0px solid #52261B;
+    text-align: center;
+    width:80%;
+    margin:0 auto;
+    border-radius: 0.2em;
+}
+#login-dialog .dialog-container>.dialog-member>.row>ul{
+    list-style: none;
+    width:50%;
+}
+#login-dialog .dialog-container>.dialog-member>.row>ul>li{
+    margin-left:4em;
+}
+#login-dialog .dialog-container>.dialog-member>.row>ul>li:not(:first-child){
+    font-size: 0.4em;
+}
+#login-dialog .dialog-container>.dialog-member>.row>div:last-child>a{
+    text-decoration: underline;
+}
+
+.vali_info{/* 页面初始，验证消息不显示 */
+	display:none;
+}
+.txt_focus{/*当文本框获得焦点时穿上*/
+	border-top:2px solid black;
+	border-left:2px solid black;
+}/*当文本框失去焦点时脱下*/
+
+.vali_success,.vali_fail{
+	background-repeat:no-repeat;
+    background-position:right center;
+	display:block;
+}
+/* 验证消息：验证通过时的样式 */
+.vali_success{
+    background-image:url("../images/ok.png");
+	padding-left:20px;
+	width:0px;height:20px;
+	overflow:hidden;
+}
+/* 验证消息：验证失败时的样式 */
+.vali_fail{
+    background-image:url("../images/err.png");
+    border:1px solid red;
+    background-color:#ddd;
+    color:Red;
+    padding-left:30px;
+}
